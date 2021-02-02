@@ -34,14 +34,17 @@ console.log(users[0].name);
 //------- Print users.name and users.age for all users ------------------------
 
 function nameAndAge(obj) {
-    var newUserInfo = users;
+    var newUserInfo = obj;
     for(var user in newUserInfo){
         var usersName = newUserInfo[user[0]].name;
         var usersAge =  newUserInfo[user[0]].age;
-        console.log(usersName, usersAge);
+        // console.log(usersName, usersAge);
+        
     }
+    return newUserInfo;
 }
 
-nameAndAge(users);
+var newUserObj = nameAndAge(users);
+console.log(newUserObj);
 
 

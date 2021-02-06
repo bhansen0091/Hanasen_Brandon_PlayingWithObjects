@@ -36,10 +36,8 @@ console.log(users[0].name);
 function nameAndAge(obj) {
     var newUserInfo = obj;
     for(var user in newUserInfo){
-        var usersName = newUserInfo[user[0]].name;
-        var usersAge =  newUserInfo[user[0]].age;
-        // console.log(usersName, usersAge);
-        
+        newUserInfo[user[0]].name;
+        newUserInfo[user[0]].age;
     }
     return newUserInfo;
 }
